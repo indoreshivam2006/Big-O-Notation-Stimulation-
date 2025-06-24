@@ -1,0 +1,137 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            background: linear-gradient(135deg, #253476 0%,  #8a45ce 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .input-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        input[type="range"] {
+            width: 300px;
+            height: 8px;
+            -webkit-appearance: none;
+            background: rgba(255,255,255,0.3);
+            border-radius: 5px;
+            outline: none;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #ff6b6b;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .size-display {
+            font-size: 1.5em;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .comparison-table th {
+            background: rgba(0,0,0,0.2);
+            font-weight: bold;
+            font-size: 1.0em;
+        }
+        
+        .graph-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .bar-graph {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            height: 300px;
+            margin: 20px 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .bar {
+            background: linear-gradient(to top, #ff6b6b, #ffd93d);
+            margin: 0 5px;
+            border-radius: 5px 5px 0 0;
+            min-width: 60px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .bar:hover {
+            transform: scale(1.05);
+        }
+        
+        .bar-label {
+            position: absolute;
+            bottom: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .bar-value {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8em;
+            white-space: nowrap;
+        }
+        
+        .real-world {
+            margin: 30px 0;
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .example-box {
+            background: rgba(255,255,255,0.1);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b6b;
+        }
